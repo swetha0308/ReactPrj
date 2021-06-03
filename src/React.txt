@@ -1,0 +1,98 @@
+React is used to create UI
+
+React is Component based Architecture 
+
+Component 
+- can be created in two ways 
+- using function  (component created using function is called functional component)
+- using class (component created using class is called Class component)
+
+
+Class Component
+ constrcutor() render() 
+
+ Props properties 
+ - it is used to pass datat from one component to the other 
+ - functionComp to functionComp
+ - FComp - ClassComp
+ - ClassComp - ClassComp
+ -ClassComp - FComp
+
+
+ Class Component 
+ Life cycle methods get called when a class comp is run 
+
+ 4 phases 
+ Mounting (html getting mounted to DOM tree)
+    Constructor(){}
+    static getDerivedStateFromProps()
+    render() //is must 
+    componentDidMount()
+
+
+ Updating (whenever u update ur state using this.setState ,below methods get called )
+   static getDerivedStateFromProps(props,state ) -
+       -(depending on props u want to update state )
+   shouldComponentUpdate()
+      - (compares props and state and avoid re rendering by return boolean value false)
+      (return true - render    , return false - do not render )
+   render()
+      - return the JSX (Javascript XML)
+   getSnapshotBeforeUpdate()
+
+   componentDidUpdate()
+      this is the last method which gets called in updating phase .
+ Unmounting
+   The Below method gets called when the component is removed /unmounted from DOM .
+    componentWillUnmount();
+///
+
+ Error Handling 
+     static getDerivedErrorFromProps()
+     componentDidCatch();
+     
+     HOC - higher Order Component is sued to share common code between the components 
+
+ Functional component
+ Class Component
+ Props
+ state
+ this.setState
+ LifeCycleMethods ()
+ List rendering 
+ tables
+ refs
+ Higher Order Component
+ Fragment - it avoid unneccsary div elements 
+
+
+ Render Props
+ axios /fetch (used to make api calls)
+ portals
+ Memo 
+ contextApi ()
+
+
+//left over 
+contextApi  no 
+portals   rare 
+Render props  no HOC
+
+ React hooks   ()
+
+ ReduxJs ()   ()
+ (redux middleware Thunk)
+
+
+Higher Order Comp 
+
+reusable comp 
+to share common code between the components
+
+
+props
+state
+Higher Order Comp 
+
+list rendering 
+

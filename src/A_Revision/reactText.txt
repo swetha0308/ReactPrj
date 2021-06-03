@@ -1,0 +1,43 @@
+
+
+
+--- React JSX
+- it is used to create UI ,(JS library)
+
+
+- its a component based structure
+
+Component can be built in two ways 
+- Functional Comp( using Function)
+- Class Component (using class)
+
+
+---- LifeCycle methods
+
+4 phases
+Mounting  (
+    constructor()  - to set properties , and state object 
+     static getDerivedStateFromProps(props,state) - when ur state property depennds on props recieved 
+     ex -       Comp A  count  -> CompB (state={count:2})
+
+
+      render()  - returns  JSX   (javascript xml ) <div> <p>  <name>  <address>  (JSX -> html   Babel (transpiler))
+
+     ComponentDidMount()  -  will execute after the render method only for first .
+       )
+Updating
+     static getDerivedStateFromProsp()    ,
+     shouldComponentUpdate() - we use this when we need to re render comp only on some condition . 
+     getSnapShotBeforeUpdate() - reactjs.org  example 
+     render()
+     componentDidUpdate(){}
+     
+     comp A   -> (user=="syed")? <compB> : null
+Unmounting
+    componentWillUnmount () - > will get called  when comp is unmounted from DOM 
+
+Error Handling 
+  it is used to catch erro and create fallback UI , so that it doesnt crash the whole app
+  static getDerivedStateFromError(error)  
+  componnetDidCatch()
+      
