@@ -7,6 +7,7 @@ class ClassComp extends React.Component {
     this.state = {
       name: "",
       revText: "",
+      id:5
     };
     this.text = "";
   }
